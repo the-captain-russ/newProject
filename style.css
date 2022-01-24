@@ -1,0 +1,94 @@
+
+body {
+    text-align: center;
+    background-color: blue;
+    color: ghostwhite;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: red;
+	display: table;
+	width: 100%;
+}
+
+nav li {
+	display: table-cell
+}
+
+table {
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 10%;
+}
+
+th, td {
+    color: black;
+    border: 5px solid black;
+    background-color: white;
+    padding: 5px;
+}
+
+ol {
+    text-align: center;
+    list-style-position: inside;
+}
+
+input {
+    margin: 1%;
+}
+
+a:link {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+}
+  
+a:visited {
+    color: pink;
+    background-color: transparent;
+    text-decoration: none;
+}
+  
+a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+}
+  
+a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.col-title {
+    font-size: larger;
+    background-color: black;
+    box-shadow: 2px 2px grey;
+    color: ghostwhite;
+}
+
+.main-body {
+    color: white;
+}
+
+.row-title {
+    background-color: black;
+    color: white;
+    box-shadow: 2px 2px grey;
+}
+
+#player-submit-button {
+    background-color: white;
+    padding: 5;
+    margin: 10;
+    color: black;
+    width:fit-content;
+    text-align:  center;
+}

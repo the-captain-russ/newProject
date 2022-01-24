@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Wizard Scoring</title>
+    <link href="./style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Card Game Home</a></li>
+        <li><a href="upanddown.html">Up and Down</a></li>
+        <li><a href="results.html">Results</a></li>
+      </ul>
+    </nav>
+    <h1>Score Card for Wizard</h1>
+    <h4><a href="https://www.ultraboardgames.com/wizard/game-rules.php" target="_blank">Wizard Rules</a></h4>
+      <img src="./images/playing-card-back-designs-poker-design-green-background.jpeg" alt="card backs">
+      <div id="game-over" hidden>
+        <h1>The Game is Over</h1>
+      </div>
+    <form action="#" onsubmit = "countPlayers('Wizard');return false" id="how-many-players">
+      <label for="players-playing">How Many Players are Playing?</label>
+      <select name="players-playing" id="players-playing">
+        <option value="3">Three</option>
+        <option value="4">Four</option>
+        <option value="5">Five</option>
+        <option value="6">Six</option>
+      </select>
+      <br>
+      <input type="submit"  value="Submit Players">
+    </form>
+    <form action="#" onsubmit="buildPlayers();return false" id="player-names" hidden>
+      <h1 id="num-of-players"></h1>
+      <ol id="list-of-players">
+      </ol>
+      <br>
+      <input type="submit" name="submit" value="Submit Player Names">
+    </form>
+    <form action="#" onsubmit="setDealer(); return false" id="who-is-dealing" hidden> 
+    </form>
+    <div id="score-table" hidden>
+      <table id=>
+        <thead>
+          <tr>
+            <th id="score-card-player-row" class="col-title">
+              <h1>Players</h1>
+            </th>
+          </tr>
+          <tr class="top-row" id="score-card-top-row">
+            <td class="row-title">Round</td>
+          </tr>
+          <tr id="score-card-dealer-row">
+            <td class="row-title">Dealer</td>
+          </tr>
+          <tr id="score-card-info-row">
+            <th class="row-title">#</th>
+          </tr>
+        </thead>
+        <tbody id="score-table-body">
+        </tbody>
+        <tr>
+          <td class="row-title">Info</td>
+          <td id="game-info-row"></td>
+        </tr>
+        <tr id="total-row">
+          <td class="row-title"><strong>Total:</strong></td>
+        </tr>
+      </table>
+    </div> 
+    <img src="images/people-playing-card-game-home.jpeg" hidden>
+    <script src="main.js"></script>
+  </body>
+</html>
